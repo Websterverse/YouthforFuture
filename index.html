@@ -34,6 +34,115 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 0;
+        overflow: hidden; /* Ensures the timeline line stays within the container */
+    }
+
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: var(--accent-color);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+        border-radius: 3px; /* Adds rounded corners to the timeline line */
+    }
+
+    .container-timeline {
+        position: relative;
+        width: 50%;
+        padding: 20px;
+        box-sizing: border-box; /* Ensures padding is included in width calculation */
+    }
+
+    .container-timeline::after {
+        content: "";
+        position: absolute;
+        top: 20px; /* Adjusted for better alignment with the content */
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 10px 0 10px;
+        border-color: var(--accent-color) transparent transparent transparent;
+    }
+
+    .left {
+        left: 0;
+    }
+
+    .right {
+        left: 50%;
+    }
+
+    .right::after {
+        left: -10px; /* Arrow positioned to the left of the content box */
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--accent-color) transparent transparent;
+    }
+
+    .left::after {
+        left: 100%; /* Arrow positioned to the right of the content box */
+        margin-left: -10px;
+        border-width: 10px 10px 0 10px;
+        border-color: var(--accent-color) transparent transparent transparent;
+    }
+
+    .timeline-content {
+        padding: 20px;
+        background-color: var(--surface-color);
+        border-radius: 8px; /* Increased border-radius for a more modern look */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow */
+        position: relative;
+        margin-bottom: 20px; /* Adds space between events */
+    }
+
+    .container-timeline:nth-child(odd) .timeline-content {
+        background-color: var(--background-color); /* Alternates background color for better contrast */
+    }
+
+    .container-timeline:nth-child(even) .timeline-content {
+        background-color: var(--surface-color); /* Alternates background color for better contrast */
+    }
+
+    @media (max-width: 768px) {
+        .container-timeline {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .timeline::after {
+            left: 31px; /* Adjusted for smaller screens */
+            margin-left: 0;
+            border-radius: 3px; /* Ensures the line looks good on mobile */
+        }
+
+        .left, .right {
+            left: 0;
+        }
+
+        .right::after {
+            left: auto;
+            right: 100%; /* Positioned to the left of the content box */
+            border-width: 10px 10px 0 10px;
+        }
+
+        .left::after {
+            left: auto;
+            right: 100%; /* Positioned to the right of the content box */
+            border-width: 10px 10px 0 10px;
+            border-color: var(--accent-color) transparent transparent transparent;
+        }
+    }
+</style>
+
+
 </head>
 
 <body class="index-page">
@@ -51,17 +160,17 @@
         <ul>
           <li><a href="index.html#hero" class="active">Home</a></li>
           <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services">Tracks</a></li>
+          <li><a href="index.html#Rules">Rules</a></li>
+          <li><a href="index.html#Tracks">Tracks</a></li>
           <li><a href="index.html#faq">FAQ</a></li>
           
           <li><a href="index.html#team">Team</a></li>
-          <li><a href="index.html#register">Register here</a></li>
+          <li><a href="index.html#timeline">Time Line</a></li>
 
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
 
     </div>
   </header>
@@ -136,8 +245,58 @@
 
     </section><!-- /About Section -->
 
+    <section id="Rules" class="section ">
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="Rules-content ps-0 ps-lg-3">
+              <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li>
+                  <i class="bi bi-diagram-3"></i>
+                  <div>
+                    <h4>Ullamco laboris nisi ut aliquip consequat</h4>
+                    <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-fullscreen-exit"></i>
+                  <div>
+                    <h4>Magnam soluta odio exercitationem reprehenderi</h4>
+                    <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                  </div>
+                </li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum
+              </p>
+            </div>
+
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about-img.svg" alt="" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+
     <!-- Services Section -->
-    <section id="services" class="services section light-background">
+    <section id="Tracks" class="services section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -180,7 +339,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Frequently Asked Questions</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -192,7 +351,7 @@
             <div class="faq-container">
 
               <div class="faq-item">
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <h3>What domains will the hackathon cover? </h3>
                 <div class="faq-content">
                   <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
                 </div>
@@ -200,7 +359,7 @@
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
+                <h3>Is there any registration fees?</h3>
                 <div class="faq-content">
                   <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                 </div>
@@ -208,7 +367,7 @@
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <h3>What is the duration of hackathon?</h3>
                 <div class="faq-content">
                   <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
                 </div>
@@ -224,7 +383,7 @@
             <div class="faq-container">
 
               <div class="faq-item">
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                <h3>Will the hackathon be conducted online or physically? </h3>
                 <div class="faq-content">
                   <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                 </div>
@@ -232,7 +391,7 @@
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
+                <h3>What is prize money for winning teams? </h3>
                 <div class="faq-content">
                   <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
                 </div>
@@ -240,7 +399,7 @@
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
+                <h3>Who is eligible to participate in hackathon? </h3>
                 <div class="faq-content">
                   <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
                 </div>
@@ -410,6 +569,25 @@
 
     </section><!-- /Clients Section -->
 
+
+    <section>
+      <div id="timeline" class="timeline">
+        <div class="container-timeline left">
+            <div class="timeline-content">
+                <h2>Title 1</h2>
+                <p>Description of the event that happened.</p>
+            </div>
+        </div>
+        <div class="container-timeline right">
+            <div class="timeline-content">
+                <h2>Title 2</h2>
+                <p>Description of the event that happened.</p>
+            </div>
+        </div>
+        <!-- Add more timeline events here -->
+    </div>
+
+    </section>
 
   </main>
 
