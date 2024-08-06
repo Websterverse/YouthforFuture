@@ -47,112 +47,7 @@
   ======================================================== -->
 
     <style>
-      .timeline {
-        position: relative;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 60px 0;
-        overflow: hidden;
-      }
-
-      .timeline::after {
-        content: "";
-        position: absolute;
-        width: 6px;
-        background-color: var(--accent-color);
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin-left: -3px;
-        border-radius: 3px;
-      }
-
-      .container-timeline {
-        position: relative;
-        width: 50%;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-
-      .container-timeline::after {
-        content: "";
-        position: absolute;
-        top: 10px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 10px 10px 0 10px;
-        border-color: var(--accent-color) transparent transparent transparent;
-      }
-
-      .left {
-        left: 0;
-      }
-
-      .right {
-        left: 50%;
-      }
-
-      .right::after {
-        left: -10px;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent var(--accent-color) transparent transparent;
-      }
-
-      .left::after {
-        left: 100%;
-        margin-left: -10px;
-        border-width: 10px 10px 0 10px;
-        border-color: var(--accent-color) transparent transparent transparent;
-      }
-
-      .timeline-content {
-        padding: 20px;
-        background-color: var(--surface-color);
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        position: relative;
-        margin-bottom: 20px;
-      }
-
-      .container-timeline:nth-child(odd) .timeline-content {
-        background-color: var(--background-color);
-      }
-
-      .container-timeline:nth-child(even) .timeline-content {
-        background-color: var(--surface-color);
-      }
-
-      @media (max-width: 768px) {
-        .container-timeline {
-          width: 100%;
-          padding: 10px;
-        }
-
-        .timeline::after {
-          left: 31px;
-          margin-left: 0;
-          border-radius: 3px;
-        }
-
-        .left,
-        .right {
-          left: 0;
-        }
-
-        .right::after {
-          left: auto;
-          right: 100%;
-          border-width: 10px 10px 0 10px;
-        }
-
-        .left::after {
-          left: auto;
-          right: 100%;
-          border-width: 10px 10px 0 10px;
-          border-color: var(--accent-color) transparent transparent transparent;
-        }
-      }
+     
     </style>
   </head>
 
@@ -204,7 +99,7 @@
                 <a href="index.html#about" class="btn-get-started"
                   >Get Started</a
                 >
-                <a href="index.html#register" class="btn-register">Register</a>
+                <a href="https://forms.gle/NyzorCa9sC1DWgdLA" target="_blank" class="btn-register">Register</a>
               </div>
             </div>
             <div
@@ -480,7 +375,7 @@
                       PPT Shortlisting Date: 18th August <br />
                       Online Hackathon: 19th August – 23rd August <br />
                       Offline Hackathon: 24th August <br />
-                      Result Announcement: 25th or 26th August <br />
+                      Result Announcement: 24th August <br />
                     </p>
                   </div>
                   <i class="faq-toggle bi bi-chevron-right"></i>
@@ -534,6 +429,12 @@
       </section>
       <!-- /Faq Section -->
 
+
+
+
+
+
+      
 <!-- Faculty Section -->
 <section id="team" class="clients section light-background">
   <!-- Section Title -->
@@ -579,13 +480,13 @@
       </script>
       <div class="swiper-wrapper align-items-center">
         <div class="swiper-slide">
-          <h2>Ms. Rhythm Choudhary</h2>
+          <h2>Ms. Rhythm Choudhary (Convenor)</h2>
         </div>
         <div class="swiper-slide">
-          <h2>Mr. Manoj Kumar</h2>
+          <h2>Mr. Manoj Kumar (Convenor)</h2>
         </div>
         <div class="swiper-slide">
-          <h2>Ms. Nikita Malik</h2>
+          <h2>Ms. Nikita Malik (Coordinator)</h2>
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -674,48 +575,102 @@
         </div>
       </section>
       <!-- /Student Section -->
+
+
+  <!-- Team Section -->
+  <section id="team" class="team section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Socities</h2>
+         </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-4">
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"></div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="member">
+            <img src="assets/img/team/IMG-20240806-WA0004.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>SDC , MSI</h4>
+                <span>Software Development Cell</span>
+              </div>
+              <div class="social">
+                <a href="https://www.instagram.com/sdc_msi" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/software-development-cell-msi/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="member">
+            <img src="assets/img/team/photo_2024-08-07_00-13-22.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>CSI , MSI</h4>
+                  <span>Computer Society of India - Delhi Chapter</span>
+             </div>
+              <div class="social">
+                <!-- <a href="" target="_blank"><i class="bi bi-instagram"></i></a> -->
+                <a href="https://www.linkedin.com/company/csi-msi/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"></div>
+        
+      </div>
+
+    </div>
+
+  </section><!-- /Team Section -->
+
+
       <section>
         <div id="timeline" class="timeline">
           <div class="container-timeline left">
             <div class="timeline-content">
-              <h2>  15th August 2024</h2>
-              <p>Registration Ends:</p>
+              <h2>Registration Ends:</h2>
+              <p>15th August 2024</p>
             </div>
           </div>
 
           <div class="container-timeline right">
             <div class="timeline-content">
-              <h2>  17th August 2024</h2>
-              <p>PPT Submission Deadline:</p>
+              <h2>PPT Submission Deadline:</h2>
+              <p>  17th August 2024</p>
             </div>
           </div>
 
           <div class="container-timeline left">
             <div class="timeline-content">
-              <h2>  18th August 2024</h2>
-              <p>PPT Shortlisting Date:</p>
+              <h2>PPT Shortlisting Date:  </h2>
+              <p>18th August 2024</p>
             </div>
           </div>
 
           <div class="container-timeline right">
             <div class="timeline-content">
-              <h2>  19th – 23rd August 2024</h2>
-              <p>Online Hackathon:</p>
+              <h2>Online Hackathon: </h2>
+              <p> 19th – 23rd August 2024</p>
             </div>
           </div>
 
           <div class="container-timeline left">
             <div class="timeline-content">
-              <h2>  24th August 2024</h2>
-              <p>  Offline Hackathon:</p>
+              <h2> Offline Hackathon: </h2>
+              <p>24th August 2024  </p>
             </div>
           </div>
 
           <div class="container-timeline right">
             <div class="timeline-content">
               
-              <h2>  25th or 26th August 2024</h2>
-              <p>  Result Announcement:</p>
+              <h2> Result Announcement:</h2>
+              <p>24th August 2024  </p>
             </div>
           </div>
         </div>
@@ -728,69 +683,57 @@
           <div class="row justify-content-center text-center">
             <div class="col-lg-6">
               <h4>Register here</h4>
-              <!-- <p>Subscribe to our newsletter and receive the latest news about our products and services!</p> -->
               <div class="newsletter-form">
-                <a
-                  href="https://mulearn-hackathon.vercel.app/"
-                  class="btn-register"
-                  >Register</a
-                >
+                <a href="https://forms.gle/NyzorCa9sC1DWgdLA" target="_blank" class="btn-register">Register</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+    
       <div class="container footer-top">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="d-flex align-items-center">
-              <span class="sitename">Ninestars</span>
+              <span class="sitename">Maharaja Surajmal Institute of Technology</span>
             </a>
             <div class="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p class="mt-3">
-                <strong>Phone:</strong> <span>+1 5589 55488 55</span>
-              </p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
+              <p>C-4 Janak Puri</p>
+              <p>New Delhi, Delhi 110058</p>
+   
+              <p><strong>Email:</strong> <span>youth4future.msi@gmail.com</span></p>
             </div>
           </div>
-
+    
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
               <li>
-                <i class="bi bi-chevron-right"></i>
-                <a href="#about">About us</a>
+                <i class="bi bi-chevron-right"></i> <a href="#about">About us</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i> <a href="#faq">FAQ</a>
               </li>
               <li>
-                <i class="bi bi-chevron-right"></i>
-                <a href="#register">Register</a>
+                <i class="bi bi-chevron-right"></i> <a href="#register">Register</a>
               </li>
             </ul>
           </div>
-
+    
           <div class="col-lg-4 col-md-12">
             <h4>Follow Us</h4>
-            <p>
-              Cras fermentum odio eu feugiat lide par naso tierra videa magna
-              derita valies
-            </p>
+            <p>Stay connected with us through our social media channels.</p>
             <div class="social-links d-flex">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.linkedin.com/company/software-development-cell-msi/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:sdc-msi@msijanakpuri.com" target="_blank"><i class="bi bi-envelope"></i></a>
+              <a href="https://www.instagram.com/sdc_msi" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://github.com/sdcmsi" target="_blank"><i class="bi bi-github"></i></a>
             </div>
           </div>
         </div>
       </div>
-
+    
       <div class="container copyright text-center mt-4">
         <p>
           © <span>Copyright</span>
@@ -798,14 +741,11 @@
           <span>All Rights Reserved</span>
         </p>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <p>Email: <a href="mailto:youth4future.msi@gmail.com">youth4future.msi@gmail.com</a></p>
         </div>
       </div>
     </footer>
-
+    
     <!-- Scroll Top -->
     <a
       href="#"
